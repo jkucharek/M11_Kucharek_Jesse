@@ -24,6 +24,8 @@
 #nav {
 	background-image: linear-gradient(to right, rgb(172, 118, 142), pink);
 	border-radius: 25px;
+	animation-name: appear2;
+	animation-duration: 4s;
 }
 
 #nav p, a {
@@ -33,6 +35,18 @@
 #banner img {
 	max-width: 90%;
 	border-radius: 0 0 25px 25px;
+	animation-name: growIn2;
+	animation-duration: 2s;
+}
+
+@keyframes growIn2{
+		0% {height: 0;}
+		100% {height: 100%;}
+}
+
+@keyframes growIn {
+	0% { width: 0%;}
+	100% {width: 80%;}
 }
 
 #categories {
@@ -42,18 +56,40 @@
 	max-width: 90%;
 }
 
+#categories p {
+	animation-name: appear2;
+	animation-duration: 4s;
+}
+
 #categories img {
 	margin: 0 auto;
 	margin-top: 3.5%;
 	max-width: 80%;
 	border-radius: 25px;
+	animation-name: growIn;
+	animation-duration: 2s;
+
 }
+
+#about p {
+	animation-name: appear2;
+	animation-duration: 4s;
+}
+
+@keyframes appear2 {
+	0% {opacity: 0%;}
+	50% {opacity: 0%;}
+	100% {opacity: 100%;}
+}
+
 
 #footer, #footer_small {
 	position: relative;
 	color: white;
 	background-image: linear-gradient(to right, rgb(172, 118, 142), pink);
 	border-radius: 25px;
+	animation-name: appear2;
+	animation-duration: 4s;
 }
 
 #categories a {
