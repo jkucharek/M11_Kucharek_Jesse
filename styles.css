@@ -17,6 +17,8 @@
 	font-family: Sacramento, script;
 	font-weight: bold;
 	color: rgb(227, 172, 177);
+	filter: drop-shadow(10px 10px 4px pink);
+
 }
 
 #nav {
@@ -49,6 +51,10 @@
 	color: white;
 	background-color: rgb(172, 118, 142);
 }
+
+	#categories a {
+		text-decoration: none;
+	}
 
 
 
