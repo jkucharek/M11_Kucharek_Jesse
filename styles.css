@@ -22,7 +22,8 @@
 }
 
 #nav {
-	background-color: rgb(172, 118, 142);
+	background-image: linear-gradient(to right, rgb(172, 118, 142), pink);
+	!background-color: rgb(172, 118, 142);
 }
 
 #nav p, a {
@@ -49,12 +50,12 @@
 #footer, #footer_small {
 	position: relative;
 	color: white;
-	background-color: rgb(172, 118, 142);
+	background-image: linear-gradient(to right, rgb(172, 118, 142), pink);
 }
 
-	#categories a {
-		text-decoration: none;
-	}
+#categories a {
+	text-decoration: none;
+}
 
 
 
