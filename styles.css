@@ -23,7 +23,7 @@
 
 #nav {
 	background-image: linear-gradient(to right, rgb(172, 118, 142), pink);
-	!background-color: rgb(172, 118, 142);
+	border-radius: 25px;
 }
 
 #nav p, a {
@@ -32,6 +32,7 @@
 
 #banner img {
 	max-width: 90%;
+	border-radius: 0 0 25px 25px;
 }
 
 #categories {
@@ -42,15 +43,17 @@
 }
 
 #categories img {
-	padding-top: 3.5%;
 	margin: 0 auto;
+	margin-top: 3.5%;
 	max-width: 80%;
+	border-radius: 25px;
 }
 
 #footer, #footer_small {
 	position: relative;
 	color: white;
 	background-image: linear-gradient(to right, rgb(172, 118, 142), pink);
+	border-radius: 25px;
 }
 
 #categories a {
