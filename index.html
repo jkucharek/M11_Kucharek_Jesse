@@ -1,64 +1,111 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-  <title>Module 11 Practical</title>
-  <meta name="description" content="Module 11 practical example">
-  <link rel="stylesheet" href="styles.css">
+		<title>ACME Corp.</title>
+		<meta name="description" content="Fictitious Business Project Home Page">
+		<link rel="stylesheet" href="styles.css">
 
-</head>
+	</head>
 
-<body>
-	<div id="content">
-		<header id="title">
-			<p class="sacramento">Piece of Cake Bakery</p>
-		</header>
-		<nav id="nav">
-			<p>
-				<a href="index.html">Home</a>
-				&emsp;
-				<a href="about.html">About</a>
-				&emsp;
-				<a href="contact.html">Contact</a>
-			</p>
-		</nav>
-		<section id="banner">
-			<img src="images/banner-img.jpg" alt="Three chocolate cupcakes with different color wrappings.  Frosted with sprinkles">
-		</section>
-		<article id="about">
-			<p class="sacramento">The Best Baked Goods In Town</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, quam id feugiat imperdiet, enim dui eleifend quam, at auctor metus ante en neque. Mecenas aliquam dui pretium gravida lacina. Quisque vitae interdum dolor, eget porta eros. Cras condimentum mi eget gravida volutpat. Iteger ut euismod massa. Sed vitae tincidunt. Loremp ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, quam id feugiat imperdiet, enim dui eleifend quam, at auctor metus ante eu neque. Maecenas aliquam dui pretium gravida lacinia. Quisque vitae interdum dolor, eget porta eros. Cras condimentum mi eget gravida volutpat. Integer ut euismod massa. Sed vitae ticidunt.</p>
-		</article>
-		<aside id="categories">
-			<div class="categoriesLink">
-				<a href="cheesecake.html">
-					<img src="images/cheesecake.jpeg" alt="Raspberry cheesecake on a plate">
-					<p class="sacramento">Cheesecake</p>
+	<body>
+		<div id="content">
+			<header>
+				<div id="logo">ACME</div>
+				<div id="title">HOME</div>
+				<div id="hamburger"><span><hr/><hr/><hr/><span></div>
+			</header>
+
+			<nav>
+				<p>Shop All</p>
+				<p>Sales</p>
+				<p>Best Sellers</p>
+				<p>New Arrivals</p>
+				<p>Industrial Products</p>
+				<p>DIY Kits</p>
+				<p>Bird Seed</p>
+				<p>Misc Products</p>
+				<p>About us</p>
+				<p>Contact us</p>
+			</nav>
+
+			<section id="searchAndCart">
+				<input type="text" placeholder="Search..." id="searchField">
+				<input type="image" src="images/search.png" id="searchButton">
+				<div></div>
+				<a href="cart.html"><img src="images/cart.png"></a>
+			</section>
+
+			<section id="banner">
+				<a href="sale.html">
+					<div>
+						<span>END OF SUMMER SALE</span>
+						<br/>
+						<span>Enjoy up to 50% off select products!<br/>Free shipping on orders over $50!<br/>Free gift with every purchase!</span>
+						<br/>
+						<span>HURRY,<br/>SALE ENDS LABOR DAY</span>				
+					</div>
 				</a>
-			</div>
-			<div class="categoriesLink">
-				<a href="special_events.html">
-					<img src="images/wedding-cake.jpeg" alt="Two layer wedding cake">
-					<p class="sacramento">Special Events</p>
+				<a href="sale.html"><img src="images/diyTornado.png"></a>
+
+			</section>
+
+			<section id="categories">
+				<a href="industrial.html">
+					<span>
+						<img src="images/industrial.png">
+						<p>Industrial</p>
+					</span>
 				</a>
-			</div>
-			<div class="categoriesLink">
-				<a href="cupcakes.html">
-					<img src="images/cupcake.jpeg" alt="A chocolate cupcake with creamcheese frosting and chocolate sprinkles">
-					<p class="sacramento">Cupcakes</p>
+				<a href="diyKits.html">
+					<span>
+						<img src="images/diyKits.png">
+						<p>DIY Kits</p>
+					</span>
 				</a>
-			</div>
-		</aside>
-		<footer id="footer">
-			<p><span>|</span>&emsp;1234 First St. Nowhere, CA 56789&emsp;<span>||</span>&emsp;(555)123-4567 | lorem@ipsum.com&emsp;<span>||</span>&emsp;This is an example site for educational purposes only.&emsp;<span>|</span></p>
-		</footer>
-		<!-- slightly different arrangement works better on smaller screens--> 
-		<footer id="footer_small">
-			<p>1234 First St. Nowhere, CA 56789</p>
-			<p>(555)123-4567 | lorem@ipsum.com</p>
-			<p>This is an example site for educational purposes only.</p>
-		</footer>
-	</div>
-</body>
+				<a href="birdSeed.html">
+					<span>
+						<img src="images/birdSeed.png">
+						<p>Bird Seed</p>
+					</span>
+				</a>
+				<a href="misc.html">
+					<span>
+						<img src="images/misc.png">
+						<p>Misc</p>
+					</span>
+				</a>
+			</section>
+
+			<section id="BSandNA">
+				<a href="bestSellers.html">
+					<span><img src="images/bestSellers.png"></span>
+				</a>
+				<span></span>
+				<a href="newArrivals.html">
+					<span><img src="images/newArrivals.png"></span>
+				</a>
+			</section>
+
+			<main>
+				<a href="allProducts.html">
+					<span><p>SHOP ALL PRODUCTS<p></span>
+					<span><img src="images/collage_mobile.png"></span>
+				</a>
+			</main>
+		</div>
+	</body>
+
+	<script>
+		document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
+
+		document.getElementById('hamburger').addEventListener("click", function() {
+			if(document.getElementsByTagName('nav')[0].style.maxHeight == "0px")
+				document.getElementsByTagName('nav')[0].style.maxHeight = document.getElementsByTagName('nav')[0].scrollHeight + "px";
+			else
+				document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
+		});
+	</script>
+</html>
